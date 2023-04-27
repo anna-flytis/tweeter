@@ -1,7 +1,6 @@
-
 article:hover {
   box-shadow: 5px 10px;
-  color: #6C8C8C
+  color: #1e30ba
 }
 
 .tweet-head {
@@ -53,5 +52,20 @@ article div {
 .tweet-reactions {
   display: flex;
   justify-content: space-around;
+}
+
+@media only screen and (min-width:1024px) {
+  .container {
+    width: 70%;
+    padding: 0;
+  }
+
+  .container .tweet-container article {
+    border: solid;
+  }
+
+  .tweet-container{
+    width: 90%;
+  }
 }
 

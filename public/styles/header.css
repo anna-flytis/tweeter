@@ -1,13 +1,14 @@
 .head {
-  height: 520px;
-  background-color: #cc8800;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  height: 400px;
+  background-color:  #00187a;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  width: 100%;
+  width: 100%
 }
+
 .head .name h2 {
   color: white;
   font-weight: 300;
@@ -15,4 +16,12 @@
 
 .head .name h2 span {
   font-weight: 600;
+}
+
+@media only screen and (min-width:1024px) {
+  .head {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    width: 500px
+  }
 }

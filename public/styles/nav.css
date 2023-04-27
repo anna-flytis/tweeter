@@ -1,9 +1,8 @@
-.nav-bar {
-  background-color: #4056A1;
-  color: #ffffff;
-  font-family: 'Bungee', cursive;
+.nav-Bar {
+  background-color: #0634c9;
   height: 120px;
   width: 100%;
+  color: #ffffff;
   position: fixed;
   top: 0;
   display: flex;
@@ -18,10 +17,10 @@
   margin: 1.5em;
 }
 
-.nav-bar footer .write {
+.nav-Bar footer .write {
   outline: none;
   border: none;
-  background-color: #4056A1;
+  background-color: #0832ba;
   color: #ffffff;
   font-family: 'Sans-serif';
   display: flex;
@@ -31,15 +30,43 @@
   font-size: 75%;
   font-weight: 10%;
 }
-.nav-bar footer .fas {
-  color: #fa8072;
+
+/* Animation Code */
+@keyframes bouncing-arrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(+10px); }
+  100% { transform: translateY(0); }
+}
+
+.nav-Bar footer .fas {
+  color: #ab1c09;
   font-size: 1.8em;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
 }
 
-.nav-bar footer .fa-angle-double-down {
+.nav-Bar footer .fa-angle-double-down {
   animation-name: bouncing-arrow;
   animation-timing-function: ease;
+}
+
+@media only screen and (min-width:1024px) {
+  .nav-Bar {
+    background-color: #082a99;
+    background-image: none;
+    height: 120px;
+    width: 100%;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-Bar footer .write {
+    background-color: #082a99;
+    background-image: none;
+  }
 }
